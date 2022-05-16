@@ -1,0 +1,372 @@
+body {
+  margin: 0;
+}
+
+.header-container {
+  background: #E3CAA5;
+  color: #826F66;
+}
+
+header {
+  width: 90%;
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  font-size: 1.9rem;
+}
+
+ .logo {
+  font-family: "Kufam", cursive;
+  font-weight: bold;
+  flex: 3;
+  color: #826F66;
+  margin-bottom: 1rem;
+}
+
+.active {
+  background-color: #AD8B73;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #FFFBE9;
+  color: #865439;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: #826F66;
+  text-align: center;
+  padding:  16px;
+  text-decoration: none;
+}
+
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #826F66;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #CEAB93;
+}
+.fa
+{
+  display:inline-block;
+  font:normal normal normal 14px/1 FontAwesome;
+  font-size:inherit;
+  text-rendering:auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale
+}
+.fa-fw
+{
+  width:1.28571429em;
+  text-align:center
+}
+
+
+.fa-home:before
+{
+  content:"\f015"
+}
+
+
+.w3-center 
+{
+  display:inline-block;
+  width:auto;
+  text-align:center;
+}
+
+.w3-block
+{
+  display:block;
+  width:100%;
+}
+.w3-black,.w3-hover-black:hover
+{
+  color: #AD8B73 !important;
+  background-color:#E3CAA5!important;
+  width:100%
+}
+
+
+.w3-padding-64
+{
+  padding-top:64px!important;
+  padding-bottom:64px!important
+}
+
+
+.w3-hover-opacity-off:hover{opacity:1}
+.w3-opacity-min{opacity:0.75}
+.w3-button
+{
+  width:100%;
+   white-space:normal;
+   text-align:left;
+   padding:8px 16px
+}
+
+.w3-button-right
+{
+   text-align:right;
+    float:  right;
+   
+}
+.w3-button:hover
+{
+  color: #E3CAA5!important;
+  background-color:#AD8B73!important;
+}
+
+
+.w3-light-brown,.w3-hover-light-brown:hover,.w3-light-brown,.w3-hover-light-brown:hover
+{
+  color:#3A3845!important;
+  background-color:#C69B7B!important
+}
+
+.fa
+{
+  display:inline-block;
+  font:normal normal normal 14px/1 FontAwesome;
+  font-size:inherit;
+  text-rendering:auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.fa-arrow-up:before{
+  content:"\f062"
+}
+
+.w3-margin-right
+{
+  margin-right:16px!important
+}
+.w3-xlarge
+{
+  font-size:24px!important
+}
+.w3-section
+{
+margin-top:16px!important;
+margin-bottom:16px!important
+}
+.w3-hover-opacity:hover{opacity:0.60}
+
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFBE9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background:#CEAB93;
+  padding: 16px;
+  color: #826F66;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #FFFBE9;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #AD8B73;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+.fa-caret-down:before
+{
+  content:"\f0d7"
+}
+    @import url(https://i.pinimg.com/564x/ac/91/9d/ac919d3560d1de46474693fcc6a90437.jpg);
+.body2 {
+  background: #CEAB93;
+  -webkit-font-smoothing: antialiased;
+  min-width: 1200px;
+    height: 1400px;
+
+}
+
+.grid {
+  padding: 60px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.grid--item {
+  position: relative;
+  margin-top: -90px;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: calc(33.33% - 10px);
+  float: left;
+  transition: all 0.5s;
+  overflow: hidden;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  -webkit-shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+.grid--item:before {
+  display: block;
+  padding-top: 112.5%;
+  content: "";
+}
+.grid--item:nth-child(1), .grid--item:nth-child(2) {
+  margin-top: 0;
+}
+.grid--item:nth-child(7n-1), .grid--item:nth-child(1) {
+  margin-left: 185px;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+.img:before, .img:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.img:before {
+  background: rgba(128, 0, 128, 0.25);
+}
+.img:after {
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.container2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  color: white;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translate(-50%, -50%) scale(0.9);
+  transition: all 0.5s;
+  -webkit-shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.h1,
+.h2 {
+  font-family: "Arapey";
+  font-style: italic;
+  font-weight: 400;
+}
+
+.h1 {
+  margin-top: -5px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 56px;
+  color: #FFFBE9;
+}
+
+.h2 {
+  font-size: 32px;
+}
+.h2:before, .h2:after {
+  display: inline-block;
+  margin: 0 0.5em;
+  width: 0.75em;
+  height: 0.03em;
+  background: turquoise;
+  content: "";
+  vertical-align: middle;
+  transition: all 0.3s;
+}
+
+.desc {
+  margin: 1em 0 0;
+  font-family: "ATC Overlook";
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 1.5;
+  color: turquoise;
+}
+
+.grid--item:hover .img:before,
+.grid--item:hover .img:after,
+.grid--item:hover .container {
+  opacity: 1;
+}
+.grid--item:hover .container {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+

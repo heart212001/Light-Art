@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Light Art</title>
+<script src="https://kit.fontawesome.com/bab7e9c9f4.js" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="website logo.png" type="image/jpeg" />
+
+
+<style>
+body {
+  margin: 0;
+}
+
+.header-container {
+  background: #E3CAA5;
+  color: #826F66;
+}
+
+header {
+  width: 90%;
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  font-size: 1.9rem;
+}
+
+ .logo {
+  font-family: "Kufam", cursive;
+  font-weight: bold;
+  flex: 3;
+  color: #826F66;
+  margin-bottom: 1rem;
+}
+
+.active {
+  background-color: #AD8B73;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #FFFBE9;
+  color: #865439;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: #826F66;
+  text-align: center;
+  padding:  16px;
+  text-decoration: none;
+}
+
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #826F66;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #CEAB93;
+}
+.fa
+{
+  display:inline-block;
+  font:normal normal normal 14px/1 FontAwesome;
+  font-size:inherit;
+  text-rendering:auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale
+}
+.fa-fw
+{
+  width:1.28571429em;
+  text-align:center
+}
+
+
+.fa-home:before
+{
+  content:"\f015"
+}
+
+
+.w3-center 
+{
+  display:inline-block;
+  width:auto;
+  text-align:center;
+}
+
+.w3-block
+{
+  display:block;
+  width:100%;
+}
+.w3-black,.w3-hover-black:hover
+{
+  color: #AD8B73 !important;
+  background-color:#E3CAA5!important;
+  width:100%
+}
+
+
+.w3-padding-64
+{
+  padding-top:64px!important;
+  padding-bottom:64px!important
+}
+
+
+.w3-hover-opacity-off:hover{opacity:1}
+.w3-opacity-min{opacity:0.75}
+.w3-button
+{
+  width:100%;
+   white-space:normal;
+   text-align:left;
+   padding:8px 16px
+}
+
+.w3-button-right
+{
+   text-align:right;
+    float:  right;
+   
+}
+.w3-button:hover
+{
+  color: #E3CAA5!important;
+  background-color:#AD8B73!important;
+}
+
+
+.w3-light-brown,.w3-hover-light-brown:hover,.w3-light-brown,.w3-hover-light-brown:hover
+{
+  color:#3A3845!important;
+  background-color:#C69B7B!important
+}
+
+.fa
+{
+  display:inline-block;
+  font:normal normal normal 14px/1 FontAwesome;
+  font-size:inherit;
+  text-rendering:auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.fa-arrow-up:before{
+  content:"\f062"
+}
+
+.w3-margin-right
+{
+  margin-right:16px!important
+}
+.w3-xlarge
+{
+  font-size:24px!important
+}
+.w3-section
+{
+margin-top:16px!important;
+margin-bottom:16px!important
+}
+.w3-hover-opacity:hover{opacity:0.60}
+
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFBE9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background:#CEAB93;
+  padding: 16px;
+  color: #826F66;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #FFFBE9;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #AD8B73;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+.fa-caret-down:before
+{
+  content:"\f0d7"
+}
+
+
+   .all2{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+.html2 {
+    font-size: 100%;
+}
+
+.a2 {
+    cursor: pointer;
+}
+
+/* typography */
+
+.h1, .h2, .p, .span, .a2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    text-shadow: 0px 0px 2px #826F66;
+    color: #826F66;
+}
+
+.h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.p {
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    padding-left: 10px;
+    text-align: center;
+}
+
+#menu-list .a2 {
+    font-size: 2rem;
+    color: #000;
+}
+
+.fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400;
+}
+
+#night {
+    color: #fff
+}
+
+/* images */
+
+.img2 {
+    position: relative;
+    width: 1300px;
+    height: 700px;
+}
+
+#night .img2 {
+    margin: 1.5rem;
+}
+
+/* colors */
+
+.bkg-grey {
+    background-color: rgb(128, 128, 128,1);
+}
+
+.bkg-dark {
+    background-color: rgb(0, 0, 0);
+}
+
+/* navigation */
+
+
+span a {
+    color: #000;
+    font-weight: 600;
+}
+
+.open-button {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#menu-list a:hover {
+    font-weight: 600;
+    color: #000;
+}
+
+/* main */
+
+main {
+    width: 100%;
+    height: 90vh;
+    background-image: url("kroson fy slh.jpeg");
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* containers */
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 251, 233, 0.6);
+    padding: 2rem 0;
+}
+
+.text-with-photo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+        background-color: #AD8B73;
+color: #FFFBE9;
+    align-items: center;
+}
+
+.text {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+            background-color: #E3CAA5;
+color: #AD8B73;
+
+}
+
+/* parallax */
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.city-centre {
+    background-image: url("tkkkded.jpeg");
+}
+
+.musicians {
+    background-image: url("WhatsApp Image 2022-05-13 at 4.23.49 PM.jpeg");
+}
+
+.schnoor {
+    background-image: url("mraba.jpeg");
+}
+
+.weserstadion {
+    background-image: url("kammera.jpeg");
+}
+</style>
+</head>
+<body>
+<!--hedar & logo-->
+  <div class="container">
+      <div class="header-container">
+       <header> 
+         <h3 class="logo">Light Art </h3> 
+         <img src="website logo.png" alt="Logo" width="98" height="100">
+       </header>
+       
+      </div> 
+   <div>
+
+<!--navbar-->
+     <div class="navbar">
+  <a class="active" href="home1.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+    <div class="dropdown">
+    <button class="dropbtn">Types Of Photography
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+      <h2> Types Of Photography</h2> 
+      </div>    
+      <div class="row">
+        <div class="column">
+        <h3> Product Photography</h3>
+          <a href="ProductBasics.html">Basics and Rules</a>
+          <a href="ProductVisual.html">Visual Feed</a>
+        </div>
+        <div class="column">
+        <h3> Food Photography </h3>
+          <a href="FoodBasics.html">Basics and Rules</a>
+          <a href="FoodVisual.html">Visual Feed</a>
+        </div>
+
+        <div class="column">
+          <h3> Nature Photography</h3>
+          <a href="NatureBasics.html">Basics and Rules</a>
+          <a href="NatureVisual.html">Visual Feed</a>
+        </div>
+        <div class="column">
+         <h3> Photographing People </h3>
+          <a href="PeopleBasics.html">Basics and Rules</a>
+          <a href="PeopleVisual.html">Visual Feed</a>
+        </div>
+         <div class="column">
+         <h3> Photojournalism </h3>
+          <a href="JournalistBasics.html">Basics and Rules</a>
+          <a href="JournalistVisual.html">Visual Feed</a>
+        </div>
+         <div class="column">
+         <h3> Black & White Photography</h3>
+          <a href="BWBasics.html">Basics and Rules</a>
+          <a href="BWVisual.html">Visual Feed</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Mobile
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+    <h2> Mobile </h2>    
+      </div>
+      <div class="row">
+        <div class="column">
+          <a href="MobBasics.html">Basics</a>
+          <a href="MobInformation.html">Information</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Camera
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+      <h2> Camera </h2> 
+      </div>    
+      <div class="row">
+       <div class="column">
+          <a href="Camintro.html">introduction</a> 
+          <a href="CamBasicsR.html">Basics And Rules</a>
+          <a href="Caminfo.html">Additional information</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+    <a href="Exhibition1.html">Exhibition</a>
+    <a href="About1.html">About</a>
+    <div class="dropdown  dropbtn 3-button w3-button-right" >
+      <a  href="login.html" >
+      <i class="fa-solid fa-circle-user"></i>
+      </a>
+      </div>
+ </div>
+ </div>  
+</div>
+
+
+<!--Page content-->
+<div class="all2 html2">
+    <main>
+        <div class="wrapper">
+            <h1 class="h1">Food Photography</h1>
+        </div>
+    </main>
+    <section id="welcome" class="text-with-photo">
+        <h2 class="h2" >Welcome to the Food Photography Department</h2>
+        <p class="p">
+            BFood and food photography is one of the most attractive photography categories for photographers. In recent years, food photography is one of the most sought-after jobs in the Middle East and the Gulf region. With the boom in restaurants, hotels, and bakeries, food photography has become an important and functional skill for job-seeking photographers.
+        </p>
+        <img  class="img2"src="krson bs.jpeg" alt="bremer train station">
+    </section>
+    <section id="city" class="text">
+        <h2 class="h2">Plan before you start shooting</h2>
+        <p class="p">
+            Professional photographers always tend to plan with drawings and portraits before they begin. In food photography, it's important to start planning before setting up your shoot and getting into the studio. Photographing dishes, food and drinks depends a lot on good and smart preparation
+        </p>
+    </section>
+    <div class="parallax city-centre"></div>
+    <section id="animals" class="text">
+        <h2 class="h2" >shooting angle</h2>
+        <p class="p">
+            Have you ever seen a low angle pizza shot? or soup? How about a burger pictured from above? There are very obvious reasons for this. Play with the angles. Move around your food. Try shooting from above, then try from below. What angle shows food best? There are no rules, but some angles seem to work better than others.
+        </p>
+    </section>
+    <div class="parallax musicians"></div>
+    <section id="medieval" class="text">
+        <h2 class="h2">composition in photography</h2>
+        <p class="p">
+           When you take a photograph, you must make some kind of decision about what elements you want to include in the photo, and most importantly how to arrange those elements in your photo.
+           Basic rules of composition
+Firstly, preconception, meaning imagining how the image will look, secondly, the visual balance, so that the image is balanced, sound and stable, thirdly, giving importance to the aspects of the image, fourthly not cutting the edges.
+        </p>
+    </section>
+    <div class="parallax schnoor"></div>
+    <section class="text-with-photo">
+        <h2 class="h2">Choosing the right lighting</h2>
+        <p class="p">
+            Lighting is the most important basics of a professional image, and the success of the photographer depends on choosing the appropriate lighting, distributing it correctly during shooting and the directions of light.
+        </p>
+        <img  src="teacharrr.jpeg" alt="">
+    </section>
+    <section id="werder" class="text">
+        <h2 class="h2">Choosing the right camera for food photography</h2>
+        <p class="p" >
+            When choosing a camera, it is preferable to delve into the features and choose the most appropriate for photographing foods. It is not necessary that the high price indicates its quality.
+And the tables surrounding the meals and taking pictures need to include a lot
+of the surrounding elements
+        </p>
+    </section>
+    <div class="parallax weserstadion">
+
+    </div>
+    <section id="night" class="text-with-photo bkg-dark">
+        <h2 class="h2">finally</h2>
+        <p>
+            Take the time to orchestrate your ingredients, control the lighting, and adjust the settings, and you'll find that you can produce food images that taste delicious.
+        </p>
+        <img class="img2" src="WhatsApp Image 2022-05-16 at 12.55.34 AM.jpeg" alt="">
+        <img class="img2" src="WhatsApp Image 2022-05-16 at 12.55.35 AM.jpeg" alt="">
+        <img class="img2" src="WhatsApp Image 2022-05-16 at 12.55.35 AM (1).jpeg" alt="">
+        <img class="img2" src="WhatsApp Image 2022-05-16 at 12.55.38 AM.jpeg" alt="">
+        <img class="img2" src="WhatsApp Image 2022-05-16 at 12.55.36 AM (1).jpeg" alt="">
+    </section>
+   
+</div>
+<!--end Page content-->
+
+ <!-- footer -->
+
+   <div class="footer">
+       
+     <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="FoodBasics.html" class="w3-button w3-light-brown"><i class="fa fa-arrow-up w3-margin-right"></i>To The Top</a>
+  <div class="w3-xlarge w3-section",.footer>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+   </div>
+   <!--end Page -->
+
+   <!--script -->
+<script >
+    const toggleMenu = () => {
+            const toggleBar = document.getElementById("menu-list");
+            return toggleBar.style.display === "flex" ? toggleBar.style.display = "none" : toggleBar.style.display = "flex";
+        }
+</script>
+</body>
+
+</html>

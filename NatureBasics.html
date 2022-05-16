@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Light Art</title>
+ 
+<link rel="shortcut icon" href="2.png" type="image/jpeg" />
+<script src="https://kit.fontawesome.com/bab7e9c9f4.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="\allcss\group.css">
+<style>
+
+body {
+  margin: 0;
+}
+
+.header-container {
+  background: #E3CAA5;
+  color: #826F66;
+}
+
+header {
+  width: 90%;
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  font-size: 1.9rem;
+}
+
+ .logo {
+ 
+  font-family: "Kufam", cursive;
+  font-weight: bold;
+  flex: 3;
+  color: #826F66;
+  margin-bottom: 1rem;
+}
+
+.active {
+  background-color: #AD8B73;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #FFFBE9;
+  color: #865439;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: #826F66;
+  text-align: center;
+  padding:  16px;
+  text-decoration: none;
+}
+
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #826F66;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #CEAB93;
+}
+.fa
+{
+  display:inline-block;
+  font:normal normal normal 14px/1 FontAwesome;
+  font-size:inherit;
+  text-rendering:auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale
+}
+.fa-fw
+{
+  width:1.28571429em;
+  text-align:center
+}
+
+
+.fa-home:before
+{
+  content:"\f015"
+}
+
+
+.w3-center 
+{
+  display:inline-block;
+  width:auto;
+  text-align:center;
+}
+
+.w3-block
+{
+  display:block;
+  width:100%;
+}
+.w3-black,.w3-hover-black:hover
+{
+  color: #AD8B73 !important;
+  background-color:#E3CAA5!important;
+  width:100%
+}
+
+
+.w3-padding-64
+{
+  padding-top:64px!important;
+  padding-bottom:64px!important
+}
+
+
+.w3-hover-opacity-off:hover{opacity:1}
+.w3-opacity-min{opacity:0.75}
+.w3-button
+{
+  width:100%;
+   white-space:normal;
+   text-align:center;
+   padding:8px 16px
+}
+
+.w3-button-right
+{
+   text-align:right;
+    float:  right;
+   
+}
+.w3-button:hover
+{
+  color: #E3CAA5!important;
+  background-color:#AD8B73!important;
+}
+
+
+.w3-light-brown,.w3-hover-light-brown:hover,.w3-light-brown,.w3-hover-light-brown:hover
+{
+  color:#3A3845!important;
+  background-color:#C69B7B!important
+}
+
+.fa
+{
+  display:inline-block;
+  font:normal normal normal 14px/1 FontAwesome;
+  font-size:inherit;
+  text-rendering:auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.fa-arrow-up:before{
+  content:"\f062"
+}
+
+.w3-margin-right
+{
+  margin-right:16px!important
+}
+.w3-xlarge
+{
+  font-size:24px!important
+}
+.w3-section
+{
+margin-top:16px!important;
+margin-bottom:16px!important
+}
+.w3-hover-opacity:hover{opacity:0.60}
+
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFBE9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background:#CEAB93;
+  padding: 16px;
+  color: #826F66;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #FFFBE9;
+  color: #826F66;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+.column a:hover {
+  background-color: #AD8B73;
+ 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+.fa-caret-down:before
+{
+  content:"\f0d7"
+}
+
+  @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sacramento&display=swap");
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  width: calc(2px * 2);
+  border: 2px solid rgba(26, 26, 26, 0);
+}
+
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+  width: calc(2px / 2);
+  border: 2px solid rgba(26, 26, 26, 0);
+}
+
+.body2 {
+  scrollbar-face-color: rgba(255, 255, 255, 0.15);
+  scrollbar-track-color: transparent;
+}
+
+
+
+
+
+.body2 {
+  display: grid;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Sacramento", cursive;
+  color: #FFFBE9;
+  background: #FFFBE9;
+  background-image: radial-gradient(ellipse at bottom left, #F9EBC8 40%, rgba(0, 163, 203, 0) 40%), radial-gradient(ellipse at top right, #E3CAA5 30%, rgba(0, 163, 203, 0) 30%), linear-gradient(to right, #A97155 0%, #E3CAA5 33%, #865439 33%, #CEAB93 66%, #BB8760 66%);
+  background-size: 50% 100%;
+      font-size: 5vmin;
+
+}
+.body2 .message {
+  position: absolute;
+  right: 0.5vw;
+  top: 1vw;
+  max-width: 60vw;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+.body2 .message a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+}
+.body2 .message a:hover {
+  border-width: 3px;
+}
+.body2 .card {
+  margin: auto;
+  padding: 2em;
+  border-radius: 1em;
+  border: 1px solid #F9EBC8;
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  background: rgb(255, 251, 233,0.3) ;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  transform: perspective(500px);
+  transform-style: preserve-3d;
+}
+.body2 .card .welcome {
+  font-family: "Sacramento", cursive;
+  transform: translateZ(20px);
+
+}
+.body2 .card .year {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5em;
+}
+.body2 .card .year span {
+  display: block;
+  transform: translateZ(40px);
+}
+.body2 .card .year span:nth-child(2) {
+  padding-left: 1em;
+  transform: translateZ(60px);
+}
+.body2 .card .year span:nth-child(3) {
+  padding-left: 2em;
+  transform: translateZ(80px);
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+
+.body3 {
+background: #AD8B73;
+  padding: 250px;
+}
+
+
+.container2  {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 600px;
+  background: #F9EBC8;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #F9EBC8;
+margin-top: 1000px;
+}
+.container3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 600px;
+  background: #F9EBC8;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #F9EBC8;
+margin-top: 1480px;
+}
+
+
+.content2 {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  text-align: justify;
+  color: black;
+  padding: 40px;
+  font-family: 'Merriweather', serif;
+}
+
+.h1 {
+  font-weight: 900;
+  text-align: center;
+}
+
+.h3 {
+  font-weight: 300;
+}
+
+.flap {
+  width: 100%;
+  height: 100%;
+}
+
+.flap::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") #F9EBC8;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.flap::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") #F9EBC8;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.container2:hover .flap::after {
+  transform: translatex(300px);
+}
+
+.container2:hover .flap::before{
+  transform: translatex(-300px);
+}
+.container3:hover .flap::after {
+  transform: translatex(300px);
+}
+
+.container3:hover .flap::before{
+  transform: translatex(-300px);
+}
+    
+.carousel {
+  display: block;
+  font-size: 0;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background: #F9EBC8;
+  transform: translateZ(0);
+  height: 200px;
+  -webkit-overflow-scrolling: touch;
+  /* for tablets */
+
+}
+.touch .carousel {
+  overflow: auto;
+}
+.carousel[data-at*=left] > .wrap::before {
+  opacity: 1;
+
+  text-indent: -50px;
+}
+.carousel[data-at*=right] > .wrap::after {
+  opacity: 1;
+  text-indent: -50px;
+}
+.carousel::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 4;
+  bottom: -4px;
+  left: 0;
+  background: #614124;
+  height: 4px;
+  border-radius: 4px;
+  opacity: 0;
+  width: var(--scrollWidth, 0);
+  left: var(--scrollLleft, 0);
+  transition: opacity 0.2s, bottom 0.2s;
+}
+.carousel:hover::after {
+  opacity: 1;
+  bottom: -10px;
+}
+.carousel > .wrap {
+  overflow: hidden;
+  border-radius: 4px;
+}
+.carousel > .wrap::before, .carousel > .wrap::after {
+  content: "‹";
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 50px;
+  font-size: 80px;
+  text-indent: -30px;
+  line-height: 200px;
+  font-family: monospace;
+  color: #614124;
+  font-weight: bold;
+  border-radius: 8px;
+  pointer-events: none;
+  transition: 0.2s ease-out;
+  background: linear-gradient(to right, white 20%, transparent);
+}
+.carousel > .wrap::after {
+  transform: rotate(180deg);
+  left: auto;
+  right: 0;
+}
+.carousel > .wrap > ul {
+  list-style: none;
+  white-space: nowrap;
+  height: 200px;
+}
+.carousel > .wrap > ul > li {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin: 0 0 0 5px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.25s ease-out;
+}
+.carousel > .wrap > ul > li:first-child {
+  margin: 0;
+}
+.carousel > .wrap > ul > li > img {
+  display: block;
+  height: 100%;
+  margin: auto;
+  vertical-align: bottom;
+  position: relative;
+  z-index: 1;
+  transition: 1s ease;
+}
+
+.body4{
+  background: #AD8B73;
+  padding:150px ;
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  max-width: 900px;
+  min-width: 550px;
+ margin-top: 850px;
+    margin-left: 330px;}
+</style>
+
+</head>
+<body>
+<!--hedar & logo-->
+  <div class="container">
+      <div class="header-container">
+       <header> 
+         <h3 class="logo">Light Art </h3> 
+         <img src="2.png" alt="Logo" width="98" height="100">
+       </header>
+       
+      </div> 
+   <div>
+
+<!--navbar-->
+     <div class="navbar">
+  <a class="active" href="home1.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+    <div class="dropdown">
+    <button class="dropbtn">Types Of Photography
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+      <h2> Types Of Photography</h2> 
+      </div>    
+      <div class="row">
+        <div class="column">
+        <h3> Product Photography</h3>
+          <a href="ProductBasics.html">Basics and Rules</a>
+          <a href="ProductVisual.html">Visual Feed</a>
+        </div>
+        <div class="column">
+        <h3> Food Photography </h3>
+          <a href="FoodBasics.html">Basics and Rules</a>
+          <a href="FoodVisual.html">Visual Feed</a>
+        </div>
+
+        <div class="column">
+          <h3> Nature Photography</h3>
+          <a href="NatureBasics.html">Basics and Rules</a>
+          <a href="NatureVisual.html">Visual Feed</a>
+        </div>
+        <div class="column">
+         <h3> Photographing People </h3>
+          <a href="PeopleBasics.html">Basics and Rules</a>
+          <a href="PeopleVisual.html">Visual Feed</a>
+        </div>
+         <div class="column">
+         <h3> Photojournalism </h3>
+          <a href="JournalistBasics.html">Basics and Rules</a>
+          <a href="JournalistVisual.html">Visual Feed</a>
+        </div>
+         <div class="column">
+         <h3> Black & White Photography</h3>
+          <a href="BWBasics.html">Basics and Rules</a>
+          <a href="BWVisual.html">Visual Feed</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Mobile
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+    <h2> Mobile </h2>    
+      </div>
+      <div class="row">
+        <div class="column">
+          <a href="MobBasics.html">Basics</a>
+          <a href="MobInformation.html">Information</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Camera
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+      <h2> Camera </h2> 
+      </div>    
+      <div class="row">
+       <div class="column">
+          <a href="Camintro.html">introduction</a> 
+          <a href="CamBasicsR.html">Basics And Rules</a>
+          <a href="Caminfo.html">Additional information</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+    <a href="Exhibition1.html">Exhibition</a>
+    <a href="About1.html">About</a>
+    <div class="dropdown  dropbtn 3-button w3-button-right" >
+      <a  href="login.html" >
+      <i class="fa-solid fa-circle-user"></i>
+      </a>
+      </div>
+ </div>
+ </div>  
+</div>
+
+
+<!--Page content-->
+<div class="body2">
+ 
+  
+  <div class="card" data-tilt data-tilt-scale="0.95" data-tilt-startY="40">
+    <div class="welcome">
+      Welcome to
+    </div>
+    <div class="year">
+      <span>Nature</span>
+      <span>photoes</span>
+     
+    </div>  
+  </div>
+</div>
+<div class="body4">
+  <div class="carousel">
+  <div class="wrap">
+    <ul>
+      <li> <img src="Re1.jpg"/></li>
+      <li> <img src="Re2.jpg"/></li>
+      <li> <img src="Re3.jpg"/></li>
+      <li> <img src="Re4.jpg"/></li>
+      <li> <img src="Re6.jpg"/></li>
+      <li> <img src="Re7.jpg"/></li>
+      <li> <img src="Re8.jpg"/></li>
+    </ul>
+  </div>
+</div>
+</div> 
+
+<div class="body3">
+<div class="container2">
+  <div class="content2">
+    <h1 class="h1">nature photography</h1>
+    <h3 class="h3">One of the most famous types of photography, and it means transferring scenes in nature by means of the camera, and transferring the beautiful landmarks and spaces in it.
+      Nature photography is a very broad term that includes human activities related to nature.
+    </h3>
+  </div>
+  <div class="flap"></div>
+</div>
+  </div>
+  <div class="body3">
+<div class="container3">
+  <div class="content2">
+    <video src="Re5.mp4" height="350" width="500" controls ></video>
+  </div>
+  <div class="flap"></div>
+</div>
+  </div>
+  
+
+<!--end Page content-->
+
+ <!-- footer -->
+
+   <div class="footer">
+       
+     <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="NatureBasics.html" class="w3-button w3-light-brown"><i class="fa fa-arrow-up w3-margin-right"></i>To The Top</a>
+  <div class="w3-xlarge w3-section",.footer>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+   </div>
+   <!--end Page -->
+
+   <!--script -->
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'></script><script  src="./script.js"></script>
+
+<script type="text/javascript">
+  // Hover-Carousel component
+// By Yair Even-Or
+// written in jQuery 2013 -> refactored to vanilla 2020
+// https://github.com/yairEO/hover-carousel
+
+function HoverCarousel( elm, settings ){
+  this.DOM = {
+    scope: elm,
+    wrap: elm.querySelector('ul').parentNode
+  }
+  
+  this.containerWidth = 0;
+  this.scrollWidth = 0;
+  this.posFromLeft = 0;    // Stripe position from the left of the screen
+  this.stripePos = 0;    // When relative mouse position inside the thumbs stripe
+  this.animated = null;
+  this.callbacks = {}
+  
+  this.init()
+}
+
+HoverCarousel.prototype = {
+  init(){
+    this.bind()
+  },
+  
+  destroy(){
+    this.DOM.scope.removeEventListener('mouseenter', this.callbacks.onMouseEnter)
+    this.DOM.scope.removeEventListener('mousemove', this.callbacks.onMouseMove)
+  },
+
+  bind(){
+    this.callbacks.onMouseEnter = this.onMouseEnter.bind(this)
+    this.callbacks.onMouseMove = e => {
+      if( this.mouseMoveRAF ) 
+        cancelAnimationFrame(this.mouseMoveRAF)
+
+      this.mouseMoveRAF = requestAnimationFrame(this.onMouseMove.bind(this, e))
+    }
+    
+    this.DOM.scope.addEventListener('mouseenter', this.callbacks.onMouseEnter)
+    this.DOM.scope.addEventListener('mousemove', this.callbacks.onMouseMove)
+  },
+  
+  // calculate the thumbs container width
+  onMouseEnter(e){
+    this.nextMore = this.prevMore = false // reset
+
+    this.containerWidth       = this.DOM.wrap.clientWidth;
+    this.scrollWidth          = this.DOM.wrap.scrollWidth; 
+    // padding in percentage of the area which the mouse movement affects
+    this.padding              = 0.2 * this.containerWidth; 
+    this.posFromLeft          = this.DOM.wrap.getBoundingClientRect().left;
+    var stripePos             = e.pageX - this.padding - this.posFromLeft;
+    this.pos                  = stripePos / (this.containerWidth - this.padding*2);
+    this.scrollPos            = (this.scrollWidth - this.containerWidth ) * this.pos;
+
+    // temporary add smoothness to the scroll 
+    this.DOM.wrap.style.scrollBehavior = 'smooth';
+    
+    if( this.scrollPos < 0 )
+      this.scrollPos = 0;
+    
+    if( this.scrollPos > (this.scrollWidth - this.containerWidth) )
+      this.scrollPos = this.scrollWidth - this.containerWidth
+
+    this.DOM.wrap.scrollLeft = this.scrollPos
+    this.DOM.scope.style.setProperty('--scrollWidth',  (this.containerWidth / this.scrollWidth) * 100 + '%');
+    this.DOM.scope.style.setProperty('--scrollLleft',  (this.scrollPos / this.scrollWidth ) * 100 + '%');
+
+    // lock UI until mouse-enter scroll is finihsed, after aprox 200ms
+    clearTimeout(this.animated)
+    this.animated = setTimeout(() => {
+      this.animated = null
+      this.DOM.wrap.style.scrollBehavior = 'auto';
+    }, 200)
+
+    return this
+  },
+
+  // move the stripe left or right according to mouse position
+  onMouseMove(e){
+    // don't move anything until inital movement on 'mouseenter' has finished
+    if( this.animated ) return
+
+    this.ratio = this.scrollWidth / this.containerWidth
+    
+    // the mouse X position, "normalized" to the carousel position
+    var stripePos = e.pageX - this.padding - this.posFromLeft 
+    
+    if( stripePos < 0 )
+        stripePos = 0
+
+    // calculated position between 0 to 1
+    this.pos = stripePos / (this.containerWidth - this.padding*2) 
+    
+    // calculate the percentage of the mouse position within the carousel
+    this.scrollPos = (this.scrollWidth - this.containerWidth ) * this.pos 
+
+    this.DOM.wrap.scrollLeft = this.scrollPos
+    
+    // update scrollbar
+    if( this.scrollPos < (this.scrollWidth - this.containerWidth) )
+      this.DOM.scope.style.setProperty('--scrollLleft',  (this.scrollPos / this.scrollWidth ) * 100 + '%');
+
+    // check if element has reached an edge
+    this.prevMore = this.DOM.wrap.scrollLeft > 0
+    this.nextMore = this.scrollWidth - this.containerWidth - this.DOM.wrap.scrollLeft > 5
+    
+    this.DOM.scope.setAttribute('data-at',
+      (this.prevMore  ? 'left ' : ' ')
+      + (this.nextMore ? 'right' : '')
+    )
+  }
+}
+           
+var carouselElm = document.querySelector('.carousel')
+new HoverCarousel(carouselElm)                          
+</script>
+</body>
+
+</html>

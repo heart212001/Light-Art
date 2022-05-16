@@ -1,0 +1,46 @@
+.body2 {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	background-color:#DEBA9D;
+}
+
+.header2 {
+	display: flex;
+	overflow: hidden;
+	height: 50vw;
+	background: #111;
+}
+
+.header2:hover img {
+	opacity: 0.5;
+}
+
+.header2 img {
+	max-width: 100%;
+	vertical-align: middle;
+	border: 1px solid black;
+	box-sizing: border-box;
+	transition: opacity .2s;
+}
+
+.header2 img:hover {
+	opacity: 1;
+}
+
+.header2 .column2 {
+animation: var(--animation, none) 16s infinite linear;
+}
+
+.header2 .column2:hover {
+	animation-play-state: paused;
+}
+
+.header2 .column2:nth-of-type(odd) {
+	align-self: flex-end;
+	--direction: 50%;
+}
+
+@keyframes slide {
+	to { transform: translateY(var(--direction, -50%)) }
+}
